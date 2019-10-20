@@ -1,2 +1,5 @@
-# design-your-future-website
-Website of Design Your Future
+# Howest / Create Your Future Website
+
+## Installation
+
+Follow instructions from the Jekyll docs at https://jekyllrb.com/docs/installation/
