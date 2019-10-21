@@ -50,3 +50,16 @@ section.alternate {
     min-height: 100vh;
   }
 }
+
+a {
+  color: $primary-color;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+footer {
+  padding: 1rem;
+  font-size: 14px;
+}
