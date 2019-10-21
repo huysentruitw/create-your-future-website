@@ -38,7 +38,7 @@ title: Home
     </div>
     <div class="row">
       {% for traject in site.trajecten %}
-      <div class="traject">
+      <div class="traject" style="background-image: url('/assets/images/{{ traject.tile }}')">
         <a href="{{ traject.url }}">{{ traject.name }}</a>
       </div>
       {% endfor %}
