@@ -1,4 +1,4 @@
-.traject {
+.traject-tile {
   margin: 2rem;
   width: 10rem;
   height: 10rem;
@@ -28,7 +28,7 @@
     vertical-align: middle;
     transform: skewY(-5deg);
     text-shadow: 2px 2px 6px  #000, -2px -2px 6px  #000, 2px -2px 6px  #000, -2px 2px 6px  #000;
-    opacity: 0;
+    opacity: .7;
     transition: opacity .1s;
 
     &:hover {
