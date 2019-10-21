@@ -1,5 +1,8 @@
 - name: Home
-  link: /
+  link: '#home'
+- name: Project aanpak
+  link: '#aanpak'
+- name: Trajecten
+  link: '#trajecten'
 - name: Contact
-  link: /contact.html
-
+  link: '#contact'
