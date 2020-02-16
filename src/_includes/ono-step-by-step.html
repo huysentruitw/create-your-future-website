@@ -1,0 +1,70 @@
+{% for card in page.ono.cards %}
+
+{% include ono-card-operation-lookup.html %}
+
+<div class="row">
+  <div class="col-lg-2">
+    <div class="ono-card card-{{ card.card }}"></div>
+    <div class="ono-card-info">
+      {% if card.time %} <div><i class="material-icons">schedule</i> {{ card.time }}</div>{% endif %}
+      {% if card.groupform %} <div><i class="material-icons">people</i> {{ card.groupform }}</div>{% endif %}
+    </div>
+  </div>
+  <div class="col-lg-10">
+    <h4>{{ operation }}</h4>
+
+    <table class="table table-borderless">
+      <tbody>
+        {% if card.technique %}
+        <tr>
+          <td>Techniek</td>
+          <td>{{ card.technique }}</td>
+        </tr>
+        {% endif %}
+
+        {% if card.media %}
+        <tr>
+          <td>Media</td>
+          <td>{{ card.media }}</td>
+        </tr>
+        {% endif %}
+
+        {% if card.who %}
+        <tr>
+          <td>Wie</td>
+          <td>{{ card.who }}</td>
+        </tr>
+        {% endif %}
+
+        {% if card.goal %}
+        <tr>
+          <td>Doelstelling</td>
+          <td>{{ card.goal }}</td>
+        </tr>
+        {% endif %}
+
+        {% if card.evaluationform %}
+        <tr>
+          <td>Evaluatievorm</td>
+          <td>{{ card.evaluationform }}</td>
+        </tr>
+        {% endif %}
+
+        {% if card.feedback %}
+        <tr>
+          <td>Feedback</td>
+          <td>{{ card.feedback }}</td>
+        </tr>
+        {% endif %}
+
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+{% if card != page.ono.cards.last %}
+<hr class="ono-step-separator">
+{% endif %}
+
+{% endfor %}
