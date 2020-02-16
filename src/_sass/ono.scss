@@ -225,7 +225,30 @@ hr.ono-step-separator {
   line-height: 24px;
   margin: .5rem 0 0 .5rem;
 
-  & i {
+  & i.material-icons {
+    vertical-align: middle !important;
+  }
+}
+
+.ono-info-table {
+  & tr:first-of-type td {
+    border-top: none;
+  }
+
+  & td:first-of-type {
+    padding-left: 0;
+    font-weight: bold;
+  }
+  & td:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.ono-info-feedback {
+  line-height: 24px;
+  text-justify: inter-word;
+
+  & i.material-icons {
     vertical-align: middle !important;
   }
 }
