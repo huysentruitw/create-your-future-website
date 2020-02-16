@@ -60,8 +60,15 @@ navigation:
     </div>
     <div class="row">
       {% for traject in site.trajecten %}
-      <div class="traject-tile" style="background-image: url('/assets/images/{{ traject.tile }}')">
-        <a href="{{ traject.url }}">{{ traject.name }}</a>
+      <div class="col-sm-4">
+        <div class="card traject-card shadow">
+          <img class="card-img-top" src="/assets/images/{{ traject.tile }}" alt="Traject image">
+          <div class="card-body">
+            <h5 class="card-title">{{ traject.name }}</h5>
+            <p class="card-text">{{ traject.summary }}</p>
+            <a href="{{ traject.url }}" class="btn btn-primary btn-sm">Bekijk traject</a>
+          </div>
+        </div>
       </div>
       {% endfor %}
     </div>
