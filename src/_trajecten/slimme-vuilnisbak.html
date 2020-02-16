@@ -4,16 +4,78 @@ layout: default
 tile: traject-slimme-vuilbak-tile.jpg
 summary: Korte omschrijving van het traject voor op home de pagina
 navigation:
-  - title: Home
-    url: /
+  - title: Terug
+    url: javascript:history.back()
+  - id: ono-bord
+    title: ONO bord
+  - id: stap-per-stap
+    title: Stap per stap
 ---
-<header>
+<header class="traject">
   <div class="header-content container">
     <div class="row">
-      <div class="col-lg-6 offset-lg-6 text-right">
-        <h1>Slimme vuilnisbak</h1>
+      <div class="col-lg-12">
+        <h1>/ Slimme vuilnisbak</h1>
       </div>
     </div>
   </div>
 </header>
 
+<section id="ono-bord">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2>ONO bord</h2>
+        <hr>
+
+        <div class="ono-board">
+          <div class="ono-carabiner">
+            <div class="ono-carabiner-body">
+              <h5>Slimme vuilnisbak</h5>
+              <p>De slimme vuildnisbak is heel slim.</p>
+            </div>
+          </div>
+
+          <ul class="ono-track-labels">
+            <li>open</li>
+            <li>begrensd</li>
+            <li>gesloten</li>
+          </ul>
+
+          <div class="ono-tracks">
+            <hr>
+            <hr>
+          </div>
+
+          <ul class="ono-cards">
+            <li class="card-inform auto-limited"></li>
+            <li class="card-inform auto-closed"></li>
+            <li class="card-define auto-closed"></li>
+            <li class="card-design-question auto-closed"></li>
+            <li class="card-invent auto-limited"></li>
+            <li class="card-choose auto-limited"></li>
+            <li class="card-idea auto-limited"></li>
+            <li class="card-prepare auto-open"></li>
+            <li class="card-reflect auto-closed"></li>
+            <li class="card-create auto-open"></li>
+            <li class="card-prototype auto-open"></li>
+            <li class="card-test auto-open"></li>
+            <li class="card-reflect auto-limited"></li>
+            <li class="card-conclude auto-limited"></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stap-per-stap" class="alternate">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2>Stap per stap</h2>
+        <hr>
+      </div>
+    </div>
+  </div>
+</section>

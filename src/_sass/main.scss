@@ -15,11 +15,14 @@ header {
   width: 100%;
   min-height: auto;
   color: #ffffff;
-  background-image: url('/assets/images/background.jpg');
-  background-position: center;
-  background-size: cover;
 
-  padding: 10rem 0 10rem 0;
+  &.home {
+    background-image: url('/assets/images/background.jpg');
+    background-position: center;
+    background-size: cover;
+
+    padding: 10rem 0 10rem 0;
+  }
 
   h1 {
     font-size: 3rem;
