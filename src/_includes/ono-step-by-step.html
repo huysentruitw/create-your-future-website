@@ -13,7 +13,7 @@
   <div class="col-lg-10">
     <h4>{{ operation }}</h4>
 
-    <table class="table table-borderless">
+    <table class="table ono-info-table">
       <tbody>
         {% if card.technique %}
         <tr>
@@ -50,15 +50,15 @@
         </tr>
         {% endif %}
 
-        {% if card.feedback %}
-        <tr>
-          <td>Feedback</td>
-          <td>{{ card.feedback }}</td>
-        </tr>
-        {% endif %}
-
       </tbody>
     </table>
+
+    {% if card.feedback %}
+    <div class="ono-info-feedback">
+      <h5>Feedback</h5>
+      {{ card.feedback | newline_to_br }}
+    </div>
+    {% endif %}
 
   </div>
 </div>
