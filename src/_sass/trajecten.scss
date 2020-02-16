@@ -4,6 +4,16 @@ header {
     background-color: $primary-color;
 
     padding: 5.5rem 0 2rem 0;
+
+    h1 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    & .subtitle {
+      font-size: 16px;
+      font-style: italic;
+    }
   }
 
 }
