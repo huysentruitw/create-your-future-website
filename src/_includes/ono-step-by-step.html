@@ -6,6 +6,9 @@
 <div class="row" id="step-{{ forloop.index }}">
   <div class="col-lg-2">
     <div class="ono-card card-{{ card.card }}"></div>
+    {% if card.additionalcard %}
+    <div class="ono-card card-{{ card.additionalcard }}"></div>
+    {% endif %}
     <div class="ono-card-info">
       <div><i class="material-icons">swap_vert</i> {{ track }}</div>
       {% if card.time %} <div><i class="material-icons">timer</i> {{ card.time }}</div>{% endif %}

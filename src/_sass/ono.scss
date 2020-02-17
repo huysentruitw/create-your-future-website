@@ -120,6 +120,10 @@ $board-background-color: #ffffff;
       &.auto-closed {
         margin-top: 18rem;
       }
+
+      &.card-attached {
+        margin-left: -1rem;
+      }
     }
   }
 }

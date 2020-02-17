@@ -20,6 +20,9 @@
   <ul class="ono-cards">
     {% for card in page.ono.cards %}
     <li class="card-{{ card.card }} auto-{{ card.track }}"></li>
+    {% if card.additionalcard %}
+    <li class="card-{{ card.additionalcard }} auto-{{ card.track }} card-attached"></li>
+    {% endif %}
     {% endfor %}
   </ul>
 </div>
