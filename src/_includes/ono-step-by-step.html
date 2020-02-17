@@ -3,7 +3,7 @@
 {% include ono-card-track-lookup.html %}
 {% include ono-card-operation-lookup.html %}
 
-<div class="row">
+<div class="row" id="step-{{ forloop.index }}">
   <div class="col-lg-2">
     <div class="ono-card card-{{ card.card }}"></div>
     <div class="ono-card-info">
@@ -65,7 +65,7 @@
   </div>
 </div>
 
-{% if card != page.ono.cards.last %}
+{% if forloop.last == false %}
 <hr class="ono-step-separator">
 {% endif %}
 
