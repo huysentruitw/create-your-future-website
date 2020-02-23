@@ -3,7 +3,7 @@
 {% include ono-card-track-lookup.html %}
 {% include ono-card-operation-lookup.html %}
 
-<div class="row" id="step-{{ forloop.index }}">
+<div class="row ono-step-row" id="step-{{ forloop.index }}">
   <div class="col-lg-2">
     <div class="ono-card card-{{ card.card }}"></div>
     {% if card.additionalcard %}

@@ -19,7 +19,7 @@
 
   <ul class="ono-cards">
     {% for card in page.ono.cards %}
-    <li class="card-{{ card.card }} auto-{{ card.track }}"></li>
+    <li class="card-{{ card.card }} auto-{{ card.track }}"><a href="#step-{{ forloop.index }}" class="page-scroll"></a></li>
     {% if card.additionalcard %}
     <li class="card-{{ card.additionalcard }} auto-{{ card.track }} card-attached"></li>
     {% endif %}
